@@ -75,5 +75,3 @@ The primary way to run a full auto-planning workflow is likely through the main 
 *   `portpy_config_files/`: Directory containing configuration files for `portpy`, such as clinical criteria and optimization parameters.
 *   `requirements.txt`: Lists all Python package dependencies.
 *   `README.md`: This file.
-
-This README provides a starting point. You may need to add more specific details about the data formats, particular patient cases, or advanced configuration options as the project evolves.
