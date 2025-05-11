@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environment variables
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDE / Editor specific
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+.idea/
+
+# Secrets - prevent llm_config.json with actual keys from being committed
+# The template version of llm_config.json (with placeholders) IS intended to be committed.
+# If you create a local file with actual keys (e.g., my_llm_config.json), add it here.
+# llm_config.json # This line is commented out as we want to commit the template.
+
+# Databases
+*.db
+*.sqlite3
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db

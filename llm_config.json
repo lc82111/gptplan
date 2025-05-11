@@ -1,0 +1,31 @@
+[
+    {
+        "model": "gpt-4o",
+        "api_key": "SET_VIA_ENV_OPENAI_API_KEY_GPT4O",
+        "tags": ["oai-gpt-4o"]
+    },
+    {
+        "model": "gpt-4o",
+        "api_key": "SET_VIA_ENV_LOCAL_API_KEY_GPT4O",
+        "base_url": "http://127.0.0.1:8888/v1/",
+        "tags": ["local-gpt-4o"]
+    },
+    {
+        "model": "gpt-4",
+        "api_key": "SET_VIA_ENV_LOCAL_API_KEY_GPT4",
+        "base_url": "http://127.0.0.1:8888/v1/",
+        "tags": ["local-gpt-4"]
+    },
+    {
+        "model": "gemini-1.5-pro-latest",
+        "api_key": "SET_VIA_ENV_GOOGLE_API_KEY_GEMINI_PRO",
+        "api_type": "google",
+        "tags": ["gm-pro"]
+    },
+    {
+        "model": "gemini-1.5-flash-latest",
+        "api_key": "SET_VIA_ENV_GOOGLE_API_KEY_GEMINI_FLASH",
+        "api_type": "google",
+        "tags": ["gm-flash"]
+    }
+]

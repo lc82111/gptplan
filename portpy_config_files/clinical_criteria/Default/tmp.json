@@ -1,0 +1,173 @@
+{
+  "disease_site": "Lung",
+  "protocol_name": "Lung_Default_2Gy_30Fr",
+  "pres_per_fraction_gy": 2,
+  "num_of_fractions": 30,
+  "criteria": [
+    {
+      "type": "max_dose",
+      "parameters": {
+        "structure_name": "GTV"
+      },
+      "constraints": {
+        "limit_dose_gy": 69,
+        "goal_dose_gy": 64.53
+      }
+    },
+    {
+      "type": "max_dose",
+      "parameters": {
+        "structure_name": "PTV"
+      },
+      "constraints": {
+        "limit_dose_gy": 69,
+        "goal_dose_gy": 65.43
+      }
+    },
+    {
+      "type": "dose_volume_D",
+      "parameters": {
+        "structure_name": "PTV",
+        "volume_perc": 95
+      },
+      "constraints": {
+        "limit_dose_gy": 57,
+        "goal_dose_gy": "60Gy"
+      }
+    },
+    {
+      "type": "max_dose",
+      "parameters": {
+        "structure_name": "CORD"
+      },
+      "constraints": {
+        "limit_dose_gy": 50,
+        "goal_dose_gy": 41.11
+      }
+    },
+    {
+      "type": "mean_dose",
+      "parameters": {
+        "structure_name": "LUNGS_NOT_GTV",
+        "structure_def": "(LUNG_L | LUNG_R) - GTV"
+      },
+      "constraints": {
+        "limit_dose_gy": 16
+      }
+    },
+    {
+      "type": "dose_volume_V",
+      "parameters": {
+        "structure_name": "LUNGS_NOT_GTV",
+        "structure_def": "(LUNG_L | LUNG_R) - GTV",
+        "dose_gy": 20
+      },
+      "constraints": {
+        "limit_volume_perc": 30
+      }
+    },
+    {
+      "type": "dose_volume_V",
+      "parameters": {
+        "structure_name": "LUNGS_NOT_GTV",
+        "structure_def": "(LUNG_L | LUNG_R) - GTV",
+        "dose_gy": 5
+      },
+      "constraints": {
+        "limit_volume_perc": 60,
+        "goal_volume_perc": 44.6
+      }
+    },
+    {
+      "type": "mean_dose",
+      "parameters": {
+        "structure_name": "HEART"
+      },
+      "constraints": {
+        "limit_dose_gy": 25
+      }
+    },
+    {
+      "type": "dose_volume_V",
+      "parameters": {
+        "structure_name": "HEART",
+        "dose_gy": 30
+      },
+      "constraints": {
+        "limit_volume_perc": 40
+      }
+    },
+    {
+      "type": "dose_volume_V",
+      "parameters": {
+        "structure_name": "HEART",
+        "dose_gy": 40
+      },
+      "constraints": {
+        "limit_volume_perc": 30
+      }
+    },
+    {
+      "type": "max_dose",
+      "parameters": {
+        "structure_name": "ESOPHAGUS"
+      },
+      "constraints": {
+        "limit_dose_gy": 63
+      }
+    },
+    {
+      "type": "mean_dose",
+      "parameters": {
+        "structure_name": "ESOPHAGUS"
+      },
+      "constraints": {
+        "limit_dose_gy": 34
+      }
+    },
+    {
+      "type": "max_dose",
+      "parameters": {
+        "structure_name": "RIND_0",
+        "structure_def": "(PTV+5) - PTV"
+      },
+      "constraints": {
+        "limit_dose_gy": "1.1*prescription_gy",
+        "goal_dose_gy": 63.7
+      }
+    },
+    {
+      "type": "max_dose",
+      "parameters": {
+        "structure_name": "RIND_1",
+        "structure_def": "(PTV+10) - (PTV + 5)"
+      },
+      "constraints": {
+        "limit_dose_gy": "1.05*prescription_gy",
+        "goal_dose_gy": 58.36
+      }
+    },
+    {
+      "type": "max_dose",
+      "parameters": {
+        "structure_name": "RIND_2",
+        "structure_def": "(PTV+30) - (PTV + 10)"
+      },
+      "constraints": {
+        "limit_dose_gy": "0.9*prescription_gy",
+        "goal_dose_gy": "52.2Gy"
+      }
+    },
+    {
+      "type": "max_dose",
+      "parameters": {
+        "structure_name": "RIND_3",
+        "structure_def": "(PTV+50) - (PTV + 30)"
+      },
+      "constraints": {
+        "limit_dose_gy": "0.85*prescription_gy",
+        "goal_dose_gy": 42.03
+      }
+    }
+  ]
+}
