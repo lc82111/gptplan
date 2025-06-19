@@ -1,5 +1,5 @@
 # gptplan
-This project, `gptplan`, is designed for automated radiotherapy treatment planning using advanced AI techniques. It integrates multi-agent systems, retrieval augmented generation, and specialized radiotherapy libraries to streamline and potentially optimize the planning process. You can find our paper here: [PMB Link](https://iopscience.iop.org/article/10.1088/1361-6560/adbff1) for more information.
+This project, `gptplan`, is designed for automated radiotherapy treatment planning using advanced AI techniques. It integrates multi-agent systems, retrieval augmented generation, and specialized radiotherapy libraries to streamline and potentially optimize the planning process. You can find our paper [A feasibility study of automating radiotherapy planning with large language model agents](https://iopscience.iop.org/article/10.1088/1361-6560/adbff1) for more information.
 
 ## Core Functionality
 The system uses AI agents, built with the `pyautogen` framework, to automate various aspects of treatment planning. Key functionalities include:
